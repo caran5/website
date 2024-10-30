@@ -9,47 +9,51 @@
 </head>
 <body>
     <div class="container">
-        <h1>ceejay arana</h1>
-        <div class="tab">
-            <button class="tablinks" onclick="openTab(event, 'About')">About</button>
-            <button class="tablinks" onclick="openTab(event, 'Projects')">Projects</button>
-            <button class="tablinks" onclick="openTab(event, 'Contact')">Contact</button>
-            <button class="tablinks" onclick="openTab(event, 'Philosophy')">Philosophy</button>
-            <button class="tablinks" onclick="openTab(event, 'Inspiration')">Inspiration</button>
+        <h1 class="fade-in">ceejay arana</h1>
+        <div class="tab fade-in">
+            <button class="tablinks" onclick="openTab(event, 'about')">about</button>
+            <button class="tablinks" onclick="openTab(event, 'projects')">projects</button>
+            <button class="tablinks" onclick="openTab(event, 'contact')">contact</button>
+            <button class="tablinks" onclick="openTab(event, 'philosophy')">philosophy</button>
+            <button class="tablinks" onclick="openTab(event, 'inspiration')">inspiration</button>
         </div>
 
-        <div id="About" class="tabcontent">
-            <h2>about</h2>
-            <p><em>who am i?</em></p>
-            &nbsp;
-            <p>hi, my name is ceejay arana. i study chemical engineering and computer science at the university 
-            of illinois urbana-champaign. the reason i chose these two courses of study is because i 
-            really enjoy innovation, entrepreneurshp, and human centered design. these two courses focus on 
-            the intersection of technology and people, and i just want people to be happy with a product i produced. </p>
-            &nbsp;
-            <h2>stuff im a part of:</h2>
-            &nbsp;
-            <ol>
+        <!-- About Tab Content -->
+        <div id="about" class="tabcontent">
+            <h2 class="fade-in">about</h2>
+            <p class="fade-in"><em>who am i?</em></p>
+            <p class="fade-in">hi, my name is ceejay arana. i study chemical engineering and computer science at the university of illinois urbana-champaign.</p>
+
+            <h2 class="fade-in">community</h2>
+            <ol class="fade-in">
                 <li>association of computing machinery, special interest group in artificial intelligence and data analytics: machine learning scope chair</li>
                 <li>the society of hispanic professional engineers: financial logistics lead</li>
-                <li>morill engineering program: general member, happy to always help out</li>
+                <li>morill engineering program: general member, always happy to help out</li>
             </ol>
+
+            <h2 class="fade-in">but that's rather academic. <em>who am i really?</em></h2>
+            <p class="fade-in">i'm a person who loves to learn.</p>
         </div>
-        <div id="Projects" class="tabcontent">
-            <h2>Projects</h2>
-            <p>Details about past projects and achievements.</p>
+
+        <!-- Other Tabs -->
+        <div id="projects" class="tabcontent fade-in">
+            <h2 class="fade-in">projects</h2>
+            <p class="fade-in">details about past projects and achievements.</p>
         </div>
-        <div id="Contact" class="tabcontent">
-            <h2>Contact</h2>
-            <p>Contact details and form.</p>
+
+        <div id="contact" class="tabcontent fade-in">
+            <h2 class="fade-in">contact</h2>
+            <p class="fade-in">contact details and form.</p>
         </div>
-        <div id="Philosophy" class="tabcontent">
-            <h2>Philosophy</h2>
-            <p>Details about personal philosophy.</p>
+
+        <div id="philosophy" class="tabcontent fade-in">
+            <h2 class="fade-in">philosophy</h2>
+            <p class="fade-in">details about personal philosophy.</p>
         </div>
-        <div id="Inspiration" class="tabcontent">
-            <h2>Inspiration</h2>
-            <p>Details about sources of inspiration.</p>
+
+        <div id="inspiration" class="tabcontent fade-in">
+            <h2 class="fade-in">inspiration</h2>
+            <p class="fade-in">details about sources of inspiration.</p>
         </div>
     </div>
     <script src="script.js"></script>

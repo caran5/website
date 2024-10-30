@@ -18,7 +18,7 @@
 h1 {
     font-size: 2.5rem;
     color: #000;
-    margin-bottom: 30px; /* Increased margin-bottom for more space */
+    margin-bottom: 30px;
     text-align: center;
 }
 
@@ -26,15 +26,15 @@ h1 {
 .tab {
     display: flex;
     justify-content: center;
-    gap: 15px; /* Increased gap for more space between buttons */
-    margin-bottom: 30px; /* Increased margin-bottom for more space */
+    gap: 15px;
+    margin-bottom: 30px;
 }
 .tab button {
     background-color: #fff;
     color: #000;
     border: 1px solid #000;
     border-radius: 0;
-    padding: 12px 24px; /* Increased padding for more space inside buttons */
+    padding: 12px 24px;
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease;
@@ -51,26 +51,79 @@ h1 {
 /* Tab content styling */
 .tabcontent {
     display: none;
-    padding: 25px; /* Increased padding for more space inside content */
+    padding: 25px;
     border: 1px solid #000;
     border-radius: 0;
     background-color: #fff;
     color: #000;
     font-size: 1.1rem;
-    animation: fadeEffect 0.5s; /* Smooth fade-in effect */
 }
 
-/* Fade-in animation */
-@keyframes fadeEffect {
-    from {opacity: 0;}
-    to {opacity: 1;}
-}
-
+/* Improved styling for ordered list */
 ol {
-    margin-left: 25px; /* Increased margin-left for more space */
+    margin-left: 20px;
     padding-left: 0;
-    list-style-position: inside; /* Moves numbers closer to the text */
+    list-style-position: inside;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
 }
+
+/* List item styling */
 li {
-    margin-bottom: 15px; /* Increased margin-bottom for more space between list items */
+    margin-bottom: 10px;
+}
+
+/* Styling for the tab content heading */
+.tabcontent h2 {
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-top: 20px;
+    color: #000;
+}
+
+/* Styling for emphasis within tab content */
+.tabcontent p em {
+    font-style: italic;
+    color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .tab {
+        flex-direction: column;
+    }
+
+    .tab button {
+        padding: 10px 15px;
+        font-size: 14px;
+        width: 100%;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+
+    .tabcontent {
+        font-size: 1rem;
+        padding: 20px;
+    }
+}
+
+/* Initial state for fade-in elements */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* Visible state for fade-in elements */
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
