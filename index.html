@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Tabbed Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>ceejay arana</h1>
+        <div class="tab">
+            <button class="tablinks" onclick="openTab(event, 'About')">About</button>
+            <button class="tablinks" onclick="openTab(event, 'Projects')">Projects</button>
+            <button class="tablinks" onclick="openTab(event, 'Contact')">Contact</button>
+            <button class="tablinks" onclick="openTab(event, 'Philosophy')">Philosophy</button>
+            <button class="tablinks" onclick="openTab(event, 'Inspiration')">Inspiration</button>
+        </div>
+
+        <div id="About" class="tabcontent">
+            <h2>about</h2>
+            <p><em>who am i?</em></p>
+            &nbsp;
+            <p>hi, my name is ceejay arana. i study chemical engineering and computer science at the university 
+            of illinois urbana-champaign. the reason i chose these two courses of study is because i 
+            really enjoy innovation, entrepreneurshp, and human centered design. these two courses focus on 
+            the intersection of technology and people, and i just want people to be happy with a product i produced. </p>
+            &nbsp;
+            <h2>stuff im a part of:</h2>
+            &nbsp;
+            <ol>
+                <li>association of computing machinery, special interest group in artificial intelligence and data analytics: machine learning scope chair</li>
+                <li>the society of hispanic professional engineers: financial logistics lead</li>
+                <li>morill engineering program: general member, happy to always help out</li>
+            </ol>
+        </div>
+        <div id="Projects" class="tabcontent">
+            <h2>Projects</h2>
+            <p>Details about past projects and achievements.</p>
+        </div>
+        <div id="Contact" class="tabcontent">
+            <h2>Contact</h2>
+            <p>Contact details and form.</p>
+        </div>
+        <div id="Philosophy" class="tabcontent">
+            <h2>Philosophy</h2>
+            <p>Details about personal philosophy.</p>
+        </div>
+        <div id="Inspiration" class="tabcontent">
+            <h2>Inspiration</h2>
+            <p>Details about sources of inspiration.</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
