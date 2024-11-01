@@ -1,14 +1,14 @@
-// Intersection Observer for fade-in elements
 document.addEventListener("DOMContentLoaded", () => {
-    const fadeInElements = document.querySelectorAll(".fade-in");
+    const fadeInElements = document.querySelectorAll(".fade-in, .portfolio-item");
 
     const observerOptions = {
         threshold: 0.1,
     };
 
     const fadeInOnScroll = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
+        entries.forEach((entry, index) => {
             if (entry.isIntersecting) {
+                entry.target.style.transitionDelay = `${index * 0.1}s`;
                 entry.target.classList.add("visible");
             } else {
                 entry.target.classList.remove("visible");
@@ -43,12 +43,10 @@ function openTab(event, tabName) {
     selectedTab.style.display = "block";
     event.currentTarget.classList.add("active");
 
-    // Apply scrollIntoView only on small screens to avoid bouncing effect
     if (window.innerWidth <= 600) {
         selectedTab.scrollIntoView({ behavior: "smooth", block: "start" });
     }
 
-    // Re-observe elements in the newly opened tab
     const fadeInElements = selectedTab.querySelectorAll(".fade-in");
     fadeInElements.forEach((element) => {
         element.classList.remove("visible");

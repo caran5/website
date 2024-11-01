@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: 'Helvetica', sans-serif;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     background-color: #f2d46f; /* Mustard yellow background */
     color: #000;
     display: flex;
@@ -157,6 +157,34 @@ hr {
     transform: translateY(0);
 }
 
+/* Swiss-style Quote Box */
+.quote-box {
+    border-left: 4px solid #000; /* Bold left border for minimalist style */
+    padding: 20px 0 20px 20px; /* Padding with left margin for text */
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    color: #000;
+}
+
+/* Swiss-style Author Text */
+.quote-author {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #000;
+}
+
+/* Minimal Additional Text Styling */
+.additional-text {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 20px;
+    color: #000;
+    text-align: center;
+}
+
 /* Responsive Design */
 @media (max-width: 600px) {
     .container {
@@ -182,4 +210,36 @@ hr {
     .tabcontent {
         font-size: 1rem;
     }
+
+    .quote-box {
+        font-size: 1.1rem;
+    }
+
+    .quote-author, .additional-text {
+        font-size: 0.9rem;
+    }
+}
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.portfolio-item {
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.portfolio-item.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
